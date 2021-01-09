@@ -37,3 +37,4 @@ test: 서버 테스트를 위한 코드
   
 ## 아키텍처
 
+<img src="https://github.com/shin-jaewan/kakao-mobility-biz/blob/mac-jwshin/architecture.png" width="80%"  title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
