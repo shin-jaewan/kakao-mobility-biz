@@ -1,0 +1,48 @@
+[{
+  "type": "StartNavi",
+  "location": {
+    "transId": "kakao20201113-0001",
+    "dateTime": "202011131101020003",
+    "totalDistance": 7000,
+    "startName": "성남시청",
+    "goalName": "카카오모빌리티",
+    "lng": 127.567849497291,
+    "lat": 36.957739187083654
+  }
+}, {
+  "type": "UpdateLocation",
+  "location": {
+    "transId": "kakao20201113-0001",
+    "dateTime": "202011131101020004",
+    "remainDistance": 6900,
+    "lng": 127.5678494971,
+    "lat": 36.9577391883654
+  }
+}, {
+  "type": "UpdateLocation",
+  "location": {
+    "transId": "kakao20201113-0001",
+    "dateTime": "202011131101020005",
+    "remainDistance": 200,
+    "lng": 127.5678494971,
+    "lat": 36.9577391883654
+  }
+}, {
+  "type": "UpdateLocation",
+  "location": {
+    "transId": "kakao20201113-0001",
+    "dateTime": "202011131101020006",
+    "remainDistance": 50,
+    "lng": 127.5678494971,
+    "lat": 36.9577391883654
+  }
+}, {
+  "type": "Close",
+  "location": {
+    "transId": "kakao20201113-0001",
+    "dateTime": "202011131101020006",
+    "remainDistance": 20,
+    "lng": 127.5678494971,
+    "lat": 36.9577391883654
+  }
+}]
