@@ -1,0 +1,17 @@
+{
+  "nodeId": 1,
+  "env": "development",
+  "port": 3000,
+
+  "mysql": {
+    "host": "15.164.225.113",
+    "port": 3306,
+    "user": "kakao1234",
+    "password": "km123",
+    "database": "kakao_mobility",
+    "connectionLimit": 200,
+    "waitForConnections": true,
+    "connectTimeout": 10000,
+    "acquireTimeout": 60000
+  }
+}

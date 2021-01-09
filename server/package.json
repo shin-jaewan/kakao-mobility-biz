@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "debug": "DEBUG='km:*' nodemon server.js",
+    "test": "./node_modules/mocha/bin/mocha test --exit",
+    "scenario": "node ./test/scenario"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mocha": "^8.2.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.5",
+    "node-mocks-http": "^1.9.0",
+    "should": "^13.2.3",
+    "socket.io": "^3.0.4",
+    "swagger-jsdoc": "^6.0.0",
+    "swagger-ui-express": "^4.1.6",
+    "websocket": "^1.0.33",
+    "ws": "^7.4.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-react": "^7.22.0"
+  }
+}
