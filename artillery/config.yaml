@@ -1,0 +1,51 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 60
+      arrivalRate: 1 # 10sec * 1000
+      # arrivalCount: 3000 # 10sec * 1000
+  processor: "./transaction.js"
+scenarios:
+  - flow:
+    - function: "init"
+    - loop:
+      # start
+      - function: "getStartTx"
+      - post:
+          url: "/api/v1/tx"
+          json:
+            type: "StartNavi"
+            location:
+              transId: "{{transId}}"
+              dateTime: "{{dateTime}}"
+              totalDistance: "{{totalDistance}}"
+              startName: "성남시청"
+              goalName: "카카오모빌리티"
+              lng: 127.567849497291
+              lat: 36.957739187083654
+      # update
+      - loop:
+        - function: "getUpdateTx"
+        - post:
+            url: "/api/v1/tx"
+            json:
+              type: "UpdateLocation"
+              location:
+                transId: "{{transId}}"
+                dateTime: "{{dateTime}}"
+                remainDistance: "{{remainDistance}}"
+                lng: 127.567849497291
+                lat: 36.957739187083654
+        count: 8
+      - function: "getCloseTx"
+      - post:
+          url: "/api/v1/tx"
+          json:
+            type: "Close"
+            location:
+              transId: "{{transId}}"
+              dateTime: "{{dateTime}}"
+              remainDistance: 0
+              lng: 127.567849497291
+              lat: 36.957739187083654
+      count: 10
