@@ -1,16 +1,21 @@
 
-## 빌드 및 실행
+# 빌드 및 실행
 package.json 파일을 참고    
-    
-#### 서버 설치 및 실행
+
+## 서버 설치 및 실행
 
     $npm install
     $npm run start
 
-#### 디버그 모드 실행  
-mocha를 이용한 테스트 및 별도 시나리오 테스트    
+## 디버그 모드 실행  
 
     $npm run debug
+
+## 유닛 테스트
+mocha를 이용한 유닛 테스트 및 별도 시나리오 테스트    
+시나리오 테스트시 서버 실행 필요
+
+    $npm run test
     $npm run scenario
 
 ## 데이터베이스

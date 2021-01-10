@@ -1,6 +1,5 @@
 {
-	"nodeId" : 1,
-	"env" : "staging",
-	"port" : 8080
-
+  "nodeId": 1,
+  "env": "staging",
+  "port": 8080
 }
