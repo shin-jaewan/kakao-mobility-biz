@@ -1,9 +1,8 @@
 config:
   target: "http://localhost:3000"
   phases:
-    - duration: 60
-      arrivalRate: 1 # 10sec * 1000
-      # arrivalCount: 3000 # 10sec * 1000
+    - duration: 10
+      arrivalRate: 1 # arrivalRate * 1sec * 100ts
   processor: "./transaction.js"
 scenarios:
   - flow:
@@ -37,6 +36,7 @@ scenarios:
                 lng: 127.567849497291
                 lat: 36.957739187083654
         count: 8
+      # close
       - function: "getCloseTx"
       - post:
           url: "/api/v1/tx"
